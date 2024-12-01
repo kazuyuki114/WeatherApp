@@ -30,10 +30,6 @@ A simple and user-friendly weather application that allows users to check the cu
 
 ## Code Structure
 
-- **MainActivity**: The main activity that displays the weather information and allows the user to search for cities.
-- **SettingsActivity**: Activity where the user can toggle between Celsius and Fahrenheit.
-- **WeatherDataManager**: A utility class for handling API requests and parsing weather data.
-- **SharedData**: A singleton class for managing global app data such as the selected temperature unit.
 
 ## Future Enhancements
 
