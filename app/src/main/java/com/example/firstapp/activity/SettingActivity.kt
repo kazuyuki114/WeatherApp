@@ -6,11 +6,9 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.Switch
 import android.widget.Toast
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.firstapp.R
 import com.example.firstapp.shared.SharedData
-import com.example.firstapp.viewmodel.UnitViewModel
 
 class SettingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

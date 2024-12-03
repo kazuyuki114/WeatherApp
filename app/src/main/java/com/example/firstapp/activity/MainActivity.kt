@@ -1,5 +1,6 @@
 package com.example.firstapp.activity
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.icu.util.Calendar
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
     private val calendar by lazy {Calendar.getInstance()}
     private val forecastAdapter by lazy { ForecastAdapter() }
 
+    @SuppressLint("NewApi")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -117,6 +119,7 @@ class MainActivity : AppCompatActivity() {
                 blurView.outlineProvider = ViewOutlineProvider.BACKGROUND
                 blurView.clipToOutline = true
             }
+
 
             // Forecast temperature
             weatherViewModel.loadForecastWeather(lat,lon,unit).enqueue(object :Callback<ForecastResponseApi>{
